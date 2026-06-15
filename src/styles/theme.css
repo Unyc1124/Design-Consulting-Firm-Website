@@ -1,0 +1,333 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+
+  /* ── Oceanic light palette ─────────────────────── */
+  --c-bg:         #F0F5FF;
+  --c-bg2:        #E6EEFF;
+  --c-card:       #FFFFFF;
+  --c-card2:      #F5F8FF;
+  --c-fg:         #0C1A3B;
+  --c-fg2:        #2C3E6E;
+  --c-muted:      #6B7FA3;
+  --c-accent:     #3B6EF8;
+  --c-accent-dim: rgba(59, 110, 248, 0.12);
+  --c-accent-border: rgba(59, 110, 248, 0.25);
+  --c-accent-fg:  #FFFFFF;
+  --c-border:     rgba(59, 110, 248, 0.1);
+  --c-border2:    rgba(59, 110, 248, 0.06);
+  --c-glow:       rgba(59, 110, 248, 0.06);
+  --c-glow2:      rgba(59, 110, 248, 0.03);
+  --c-overlay:    rgba(240, 245, 255, 0.8);
+  --c-grain:      0.08;
+  --c-grid:       rgba(59, 110, 248, 0.04);
+  --c-nav-blur:   rgba(240, 245, 255, 0.92);
+  --c-stat-num:   #0C1A3B;
+
+  /* Shadcn/Radix token mappings – light */
+  --background: #F0F5FF;
+  --foreground: #0C1A3B;
+  --card: #FFFFFF;
+  --card-foreground: #0C1A3B;
+  --popover: #FFFFFF;
+  --popover-foreground: #0C1A3B;
+  --primary: #3B6EF8;
+  --primary-foreground: #FFFFFF;
+  --secondary: #E6EEFF;
+  --secondary-foreground: #0C1A3B;
+  --muted: #E6EEFF;
+  --muted-foreground: #6B7FA3;
+  --accent: #3B6EF8;
+  --accent-foreground: #FFFFFF;
+  --destructive: #d4183d;
+  --destructive-foreground: #ffffff;
+  --border: rgba(59, 110, 248, 0.1);
+  --input: #E6EEFF;
+  --input-background: #EDF2FF;
+  --switch-background: #C4D0F0;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --ring: #3B6EF8;
+  --radius: 0.25rem;
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: #030213;
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+.dark {
+  /* ── Oceanic dark palette ─────────────────────── */
+  --c-bg:         #060D1F;
+  --c-bg2:        #090F25;
+  --c-card:       #0C1830;
+  --c-card2:      #0F1E38;
+  --c-fg:         #E8EDF8;
+  --c-fg2:        #A8B8D8;
+  --c-muted:      #4E5F80;
+  --c-accent:     #5B8CFF;
+  --c-accent-dim: rgba(91, 140, 255, 0.12);
+  --c-accent-border: rgba(91, 140, 255, 0.3);
+  --c-accent-fg:  #FFFFFF;
+  --c-border:     rgba(91, 140, 255, 0.1);
+  --c-border2:    rgba(91, 140, 255, 0.06);
+  --c-glow:       rgba(91, 140, 255, 0.07);
+  --c-glow2:      rgba(91, 140, 255, 0.04);
+  --c-overlay:    rgba(6, 13, 31, 0.9);
+  --c-grain:      0.15;
+  --c-grid:       rgba(91, 140, 255, 0.03);
+  --c-nav-blur:   rgba(6, 13, 31, 0.9);
+  --c-stat-num:   #E8EDF8;
+
+  /* Shadcn/Radix token mappings – dark */
+  --background: #060D1F;
+  --foreground: #E8EDF8;
+  --card: #0C1830;
+  --card-foreground: #E8EDF8;
+  --popover: #0C1830;
+  --popover-foreground: #E8EDF8;
+  --primary: #5B8CFF;
+  --primary-foreground: #FFFFFF;
+  --secondary: #0F1E38;
+  --secondary-foreground: #E8EDF8;
+  --muted: #0F1E38;
+  --muted-foreground: #4E5F80;
+  --accent: #5B8CFF;
+  --accent-foreground: #FFFFFF;
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: rgba(91, 140, 255, 0.1);
+  --input: #0F1E38;
+  --ring: #5B8CFF;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(0.269 0 0);
+  --sidebar-ring: oklch(0.439 0 0);
+}
+
+/* ── Dreamy Pink × Blue gradient theme ─────────── */
+.pink {
+  /* custom tokens */
+  --c-bg:            #FDF0F9;
+  --c-bg2:           #F4E8FF;
+  --c-card:          #FFFFFF;
+  --c-card2:         #FFF4FD;
+  --c-fg:            #1B082C;
+  --c-fg2:           #48206A;
+  --c-muted:         #8E62AB;
+  --c-accent:        #8B5CF6;
+  --c-accent-dim:    rgba(139, 92, 246, 0.1);
+  --c-accent-border: rgba(139, 92, 246, 0.32);
+  --c-accent-fg:     #FFFFFF;
+  --c-border:        rgba(236, 120, 195, 0.22);
+  --c-border2:       rgba(236, 120, 195, 0.1);
+  --c-glow:          rgba(255, 100, 180, 0.24);
+  --c-glow2:         rgba(100, 120, 255, 0.14);
+  --c-grain:         0.03;
+  --c-grid:          rgba(236, 120, 195, 0.06);
+  --c-nav-blur:      rgba(253, 240, 249, 0.94);
+  --c-stat-num:      #1B082C;
+  /* Shadcn token mappings */
+  --background:      #FDF0F9;
+  --foreground:      #1B082C;
+  --card:            #FFFFFF;
+  --card-foreground: #1B082C;
+  --primary:         #8B5CF6;
+  --primary-foreground: #FFFFFF;
+  --secondary:       #F4E8FF;
+  --secondary-foreground: #1B082C;
+  --muted:           #F4E8FF;
+  --muted-foreground:#8E62AB;
+  --accent:          #8B5CF6;
+  --accent-foreground: #FFFFFF;
+  --destructive:     #d4183d;
+  --destructive-foreground: #ffffff;
+  --border:          rgba(236, 120, 195, 0.22);
+  --input:           #F4E8FF;
+  --ring:            #8B5CF6;
+  --radius:          0.5rem;
+}
+
+/* ── Pink gradient visual overrides ─────────────── */
+
+/* Full page: pink top-left → lavender mid → sky blue bottom-right */
+.pink body {
+  background:
+    linear-gradient(160deg,
+      #FFD6EE 0%,
+      #F4DBFF 30%,
+      #DDE4FF 65%,
+      #C8DEFF 100%) !important;
+  min-height: 100vh;
+}
+
+/* All sections inherit gradient instead of opaque fills */
+.pink section { background: transparent !important; }
+
+/* Card surfaces: white with a soft pink-to-lavender tint */
+.pink [style*="var(--c-card)"] {
+  background: linear-gradient(145deg, #FFFFFF 0%, #FFF3FD 55%, #F5F0FF 100%) !important;
+  border-color: rgba(220, 140, 200, 0.2) !important;
+  box-shadow: 0 2px 20px rgba(230, 130, 195, 0.08), 0 0 0 1px rgba(220,140,200,0.12) !important;
+}
+
+/* Accent buttons: hot pink → violet → sky blue gradient */
+.pink [style*="background: var(--c-accent)"] {
+  background: linear-gradient(135deg, #FF6EB4 0%, #B06EFF 50%, #6EB4FF 100%) !important;
+  border: none !important;
+  box-shadow: 0 4px 20px rgba(180, 100, 255, 0.35) !important;
+}
+
+/* Italic em text (section headings accent) → gradient text */
+.pink em {
+  background: linear-gradient(90deg, #FF6EB4 0%, #B06EFF 50%, #6EB4FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-style: italic;
+}
+
+/* Badge chips */
+.pink [style*="background: var(--c-accent-dim)"] {
+  background: linear-gradient(135deg, rgba(255,110,180,0.12) 0%, rgba(110,180,255,0.1) 100%) !important;
+}
+
+/* Hover glow on cards in pink mode */
+.pink [style*="border-color: rgba(139, 92, 246"] {
+  box-shadow: 0 0 50px rgba(255,100,180,0.18), 0 0 90px rgba(100,150,255,0.12) !important;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /**
+  * Default typography styles for HTML elements (h1-h4, p, label, button, input).
+  * These are in @layer base, so Tailwind utility classes (like text-sm, text-lg) automatically override them.
+  */
+
+  html {
+    font-size: var(--font-size);
+  }
+
+  /* Smooth theme transitions */
+  *, *::before, *::after {
+    transition: background-color 0.35s ease, border-color 0.35s ease, color 0.2s ease;
+  }
+
+  /* Scrollbar – themed */
+  ::-webkit-scrollbar { width: 5px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--c-accent-dim); border-radius: 99px; }
+  .dark ::-webkit-scrollbar-thumb { background: rgba(91,140,255,0.25); }
+  .pink ::-webkit-scrollbar-thumb { background: linear-gradient(to bottom, #FF6EB4, #B06EFF); }
+
+  h1 {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: var(--text-xl);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  h3 {
+    font-size: var(--text-lg);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  h4 {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  label {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  button {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  input {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-normal);
+    line-height: 1.5;
+  }
+}
